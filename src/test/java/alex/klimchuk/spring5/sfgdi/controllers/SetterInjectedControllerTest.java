@@ -1,6 +1,6 @@
 package alex.klimchuk.spring5.sfgdi.controllers;
 
-import alex.klimchuk.spring5.sfgdi.services.impl.ConstructorGreetingServiceImpl;
+import alex.klimchuk.spring5.sfgdi.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -15,7 +15,7 @@ class SetterInjectedControllerTest {
     @BeforeEach
     void setUp() {
         controller = new SetterInjectedController();
-        controller.setGreetingService(new ConstructorGreetingServiceImpl());
+        controller.setGreetingService(new ConstructorGreetingService());
     }
 
     @Test

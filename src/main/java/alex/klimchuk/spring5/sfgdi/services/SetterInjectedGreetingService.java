@@ -1,6 +1,5 @@
-package alex.klimchuk.spring5.sfgdi.services.impl;
+package alex.klimchuk.spring5.sfgdi.services;
 
-import alex.klimchuk.spring5.sfgdi.services.GreetingService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -8,7 +7,7 @@ import org.springframework.stereotype.Service;
  */
 
 @Service
-public class SetterInjectedGreetingServiceImpl implements GreetingService {
+public class SetterInjectedGreetingService implements GreetingService {
 
     @Override
     public String sayGreeting() {

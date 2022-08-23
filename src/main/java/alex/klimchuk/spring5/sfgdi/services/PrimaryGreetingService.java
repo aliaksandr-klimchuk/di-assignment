@@ -1,6 +1,5 @@
-package alex.klimchuk.spring5.sfgdi.services.impl;
+package alex.klimchuk.spring5.sfgdi.services;
 
-import alex.klimchuk.spring5.sfgdi.services.GreetingService;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 @Primary
 @Service
-public class PrimaryGreetingServiceImpl implements GreetingService {
+public class PrimaryGreetingService implements GreetingService {
 
     @Override
     public String sayGreeting() {

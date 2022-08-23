@@ -1,6 +1,5 @@
-package alex.klimchuk.spring5.sfgdi.services.impl;
+package alex.klimchuk.spring5.sfgdi.services;
 
-import alex.klimchuk.spring5.sfgdi.services.PetService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Profile("cat")
-public class CatPetServiceImpl implements PetService {
+public class CatPetService implements PetService {
 
     @Override
     public String getPetType() {
