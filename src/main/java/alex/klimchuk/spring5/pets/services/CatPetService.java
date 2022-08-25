@@ -1,4 +1,4 @@
-package alex.klimchuk.spring5.sfgdi.services;
+package alex.klimchuk.spring5.pets.services;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;

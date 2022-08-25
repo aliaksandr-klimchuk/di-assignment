@@ -1,7 +1,6 @@
 package alex.klimchuk.spring5.sfgdi.controllers;
 
-import alex.klimchuk.spring5.sfgdi.services.PetService;
-import org.springframework.beans.factory.annotation.Qualifier;
+import alex.klimchuk.spring5.pets.services.PetService;
 import org.springframework.stereotype.Controller;
 
 /**
