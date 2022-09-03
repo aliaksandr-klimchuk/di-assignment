@@ -1,10 +1,12 @@
 package alex.klimchuk.spring5.sfgdi;
 
 import alex.klimchuk.spring5.sfgdi.controllers.*;
+import alex.klimchuk.spring5.sfgdi.services.PrototypeBean;
+import alex.klimchuk.spring5.sfgdi.services.SingletonBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
+//import org.springframework.context.annotation.ComponentScan;
 
 /**
  * Copyright Alex Klimchuk (c) 2022.
@@ -42,6 +44,18 @@ public class SfgDiApplication {
         ConstructorInjectedController constructorInjectedController =
                 (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
         System.out.println(constructorInjectedController.getGreeting());
+
+        System.out.println("-------- Bean Scopes");
+        SingletonBean singletonBean1 = ctx.getBean(SingletonBean.class);
+        SingletonBean singletonBean2 = ctx.getBean(SingletonBean.class);
+        System.out.println(singletonBean1.getScope());
+        System.out.println(singletonBean2.getScope());
+
+        PrototypeBean prototypeBean1 = ctx.getBean(PrototypeBean.class);
+        PrototypeBean prototypeBean2 = ctx.getBean(PrototypeBean.class);
+        System.out.println(prototypeBean1.getScope());
+        System.out.println(prototypeBean2.getScope());
+
     }
 
 }

@@ -3,5 +3,5 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean name="ConstructorGreetingService" class="alex.klimchuk.spring5.sfgdi.services.ConstructorGreetingService"/>
+    <bean name="constructorGreetingService" class="alex.klimchuk.spring5.sfgdi.services.ConstructorGreetingService"/>
 </beans>
