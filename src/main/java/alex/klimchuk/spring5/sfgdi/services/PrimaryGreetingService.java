@@ -1,14 +1,14 @@
 package alex.klimchuk.spring5.sfgdi.services;
 
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Service;
+//import org.springframework.context.annotation.Primary;
+//import org.springframework.stereotype.Service;
 
 /**
  * Copyright Alex Klimchuk (c) 2022.
  */
 
-@Primary
-@Service
+//@Primary
+//@Service
 public class PrimaryGreetingService implements GreetingService {
 
     @Override
