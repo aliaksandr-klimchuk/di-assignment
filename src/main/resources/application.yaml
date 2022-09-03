@@ -1,0 +1,19 @@
+spring:
+  profiles:
+      active:
+        - prod
+        - cat
+        - EN
+  data:
+     username: crazy_pro
+     password: DBPass
+     jdbcurl: anyUrlToDB
+
+---
+
+spring:
+  profiles: prod
+  data:
+    username: prod
+    password: prodDBPass
+    jdbcurl: prodUrlToDB

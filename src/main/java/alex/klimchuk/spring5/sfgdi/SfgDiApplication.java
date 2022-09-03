@@ -1,6 +1,9 @@
 package alex.klimchuk.spring5.sfgdi;
 
+import alex.klimchuk.spring5.sfgdi.config.SfgdiConfiguration;
+import alex.klimchuk.spring5.sfgdi.config.SfgdiConstructorConfig;
 import alex.klimchuk.spring5.sfgdi.controllers.*;
+import alex.klimchuk.spring5.sfgdi.datasource.FakeDataSource;
 import alex.klimchuk.spring5.sfgdi.services.PrototypeBean;
 import alex.klimchuk.spring5.sfgdi.services.SingletonBean;
 import org.springframework.boot.SpringApplication;
@@ -27,25 +30,25 @@ public class SfgDiApplication {
 
         MyController myController = (MyController) ctx.getBean("myController");
 
-        System.out.println("------- Primary Bean");
+        System.out.println("---------- Primary Bean ----------");
         System.out.println(myController.sayHello());
 
-        System.out.println("------ Property");
+        System.out.println("---------- Property ----------");
         PropertyInjectedController propertyInjectedController =
                 (PropertyInjectedController) ctx.getBean("propertyInjectedController");
         System.out.println(propertyInjectedController.getGreeting());
 
-        System.out.println("--------- Setter");
+        System.out.println("---------- Setter ----------");
         SetterInjectedController setterInjectedController =
                 (SetterInjectedController) ctx.getBean("setterInjectedController");
         System.out.println(setterInjectedController.getGreeting());
 
-        System.out.println("-------- Constructor");
+        System.out.println("---------- Constructor ----------");
         ConstructorInjectedController constructorInjectedController =
                 (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
         System.out.println(constructorInjectedController.getGreeting());
 
-        System.out.println("-------- Bean Scopes");
+        System.out.println("---------- Bean Scopes ----------");
         SingletonBean singletonBean1 = ctx.getBean(SingletonBean.class);
         SingletonBean singletonBean2 = ctx.getBean(SingletonBean.class);
         System.out.println(singletonBean1.getScope());
@@ -56,6 +59,23 @@ public class SfgDiApplication {
         System.out.println(prototypeBean1.getScope());
         System.out.println(prototypeBean2.getScope());
 
+        System.out.println("---------- Fake Props Bean ----------");
+        FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
+        System.out.println(fakeDataSource.getUsername());
+        System.out.println(fakeDataSource.getPassword());
+        System.out.println(fakeDataSource.getJdbcurl());
+
+        System.out.println("---------- Config Props Bean ----------");
+        SfgdiConfiguration sfgdiConfiguration = ctx.getBean(SfgdiConfiguration.class);
+        System.out.println(sfgdiConfiguration.getUsername());
+        System.out.println(sfgdiConfiguration.getPassword());
+        System.out.println(sfgdiConfiguration.getJdbcurl());
+
+        System.out.println("---------- Constructor Binding ----------");
+        SfgdiConstructorConfig sfgdiConstructorConfig = ctx.getBean(SfgdiConstructorConfig.class);
+        System.out.println(sfgdiConstructorConfig.getUsername());
+        System.out.println(sfgdiConstructorConfig.getPassword());
+        System.out.println(sfgdiConstructorConfig.getJdbcurl());
     }
 
 }

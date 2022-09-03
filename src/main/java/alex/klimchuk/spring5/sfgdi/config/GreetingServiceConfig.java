@@ -1,8 +1,11 @@
 package alex.klimchuk.spring5.sfgdi.config;
 
 import alex.klimchuk.spring5.pets.services.*;
+import alex.klimchuk.spring5.sfgdi.datasource.FakeDataSource;
 import alex.klimchuk.spring5.sfgdi.repositories.*;
 import alex.klimchuk.spring5.sfgdi.services.*;
+//import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.*;
 
 /**
@@ -10,7 +13,38 @@ import org.springframework.context.annotation.*;
  */
 @Configuration
 @ImportResource("classpath:spring-config.xml")
+//@PropertySource("classpath:datasource.properties")
+@EnableConfigurationProperties(SfgdiConstructorConfig.class)
 public class GreetingServiceConfig {
+
+//    @Bean
+//    FakeDataSource fakeDataSource(@Value("${spring.data.username}") String username,
+//                                  @Value("${spring.data.password}") String password,
+//                                  @Value("${spring.data.jdbcurl}") String jdbcurl) {
+//        FakeDataSource fakeDataSource = new FakeDataSource();
+//        fakeDataSource.setUsername(username);
+//        fakeDataSource.setPassword(password);
+//        fakeDataSource.setJdbcurl(jdbcurl);
+//        return fakeDataSource;
+//    }
+
+//    @Bean
+//    FakeDataSource fakeDataSource(SfgdiConfiguration sfgdiConfiguration) {
+//        FakeDataSource fakeDataSource = new FakeDataSource();
+//        fakeDataSource.setUsername(sfgdiConfiguration.getUsername());
+//        fakeDataSource.setPassword(sfgdiConfiguration.getPassword());
+//        fakeDataSource.setJdbcurl(sfgdiConfiguration.getJdbcurl());
+//        return fakeDataSource;
+//    }
+
+    @Bean
+    FakeDataSource fakeDataSource(SfgdiConstructorConfig sfgdiConstructorConfig) {
+        FakeDataSource fakeDataSource = new FakeDataSource();
+        fakeDataSource.setUsername(sfgdiConstructorConfig.getUsername());
+        fakeDataSource.setPassword(sfgdiConstructorConfig.getPassword());
+        fakeDataSource.setJdbcurl(sfgdiConstructorConfig.getJdbcurl());
+        return fakeDataSource;
+    }
 
     @Bean
     PetServiceFactory petServiceFactory() {

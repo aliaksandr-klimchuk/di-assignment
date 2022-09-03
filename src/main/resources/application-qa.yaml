@@ -1,0 +1,5 @@
+spring:
+  data:
+    username: qa
+    password: qaDBPass
+    jdbcurl: qaUrlToDB
