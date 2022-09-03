@@ -1,5 +1,6 @@
 package alex.klimchuk.spring5.sfgdi.config;
 
+import alex.klimchuk.spring5.sfgdi.repositories.*;
 import alex.klimchuk.spring5.sfgdi.services.*;
 import org.springframework.context.annotation.*;
 
@@ -16,10 +17,15 @@ public class GreetingServiceConfig {
         return new I18NSpanishService();
     }
 
-    @Profile("EN")
     @Bean
-    I18nEnglishGreetingService i18nService() {
-        return new I18nEnglishGreetingService();
+    EnglishGreetingRepository englishGreetingRepository() {
+        return new EnglishGreetingRepositoryImpl();
+    }
+
+    @Bean
+    @Profile("EN")
+    I18nEnglishGreetingService i18nService(EnglishGreetingRepository englishGreetingRepository) {
+        return new I18nEnglishGreetingService(englishGreetingRepository);
     }
 
     @Primary
