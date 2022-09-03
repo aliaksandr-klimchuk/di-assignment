@@ -12,7 +12,6 @@ import javax.annotation.PreDestroy;
 /**
  * Copyright Alex Klimchuk (c) 2022.
  */
-
 @Component
 public class LifeCycleDemoBean implements InitializingBean, DisposableBean, BeanNameAware,
         BeanFactoryAware, ApplicationContextAware {

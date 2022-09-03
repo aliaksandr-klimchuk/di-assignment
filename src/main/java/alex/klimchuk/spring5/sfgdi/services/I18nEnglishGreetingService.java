@@ -8,7 +8,6 @@ import alex.klimchuk.spring5.sfgdi.repositories.EnglishGreetingRepository;
 /**
  * Copyright Alex Klimchuk (c) 2022.
  */
-
 //@Profile("EN")
 //@Service("i18nService")
 public class I18nEnglishGreetingService implements GreetingService {

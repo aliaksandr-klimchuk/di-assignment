@@ -6,7 +6,6 @@ package alex.klimchuk.spring5.sfgdi.services;
 /**
  * Copyright Alex Klimchuk (c) 2022.
  */
-
 //@Primary
 //@Service
 public class PrimaryGreetingService implements GreetingService {

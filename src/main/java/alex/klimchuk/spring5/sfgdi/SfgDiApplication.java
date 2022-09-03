@@ -9,9 +9,8 @@ import org.springframework.context.annotation.ComponentScan;
 /**
  * Copyright Alex Klimchuk (c) 2022.
  */
-
 @SpringBootApplication
-@ComponentScan(basePackages = {"alex.klimchuk.spring5.sfgdi", "alex.klimchuk.spring5.pets"})
+//@ComponentScan(basePackages = {"alex.klimchuk.spring5.sfgdi", "alex.klimchuk.spring5.pets"})
 public class SfgDiApplication {
 
     public static void main(String[] args) {

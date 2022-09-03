@@ -1,5 +1,11 @@
 package alex.klimchuk.spring5.sfgdi.repositories;
 
+//import org.springframework.stereotype.Repository;
+
+/**
+ * Copyright Alex Klimchuk (c) 2022.
+ */
+//@Repository
 public class EnglishGreetingRepositoryImpl implements EnglishGreetingRepository {
 
     @Override

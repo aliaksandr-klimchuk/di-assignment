@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 /**
  * Copyright Alex Klimchuk (c) 2022.
  */
-
 class ConstructorInjectedControllerTest {
 
     ConstructorInjectedController controller;

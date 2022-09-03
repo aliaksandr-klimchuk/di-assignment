@@ -1,5 +1,6 @@
 package alex.klimchuk.spring5.sfgdi.config;
 
+import alex.klimchuk.spring5.pets.services.*;
 import alex.klimchuk.spring5.sfgdi.repositories.*;
 import alex.klimchuk.spring5.sfgdi.services.*;
 import org.springframework.context.annotation.*;
@@ -7,9 +8,26 @@ import org.springframework.context.annotation.*;
 /**
  * Copyright Alex Klimchuk (c) 2022.
  */
-
 @Configuration
+@ImportResource("classpath:spring-config.xml")
 public class GreetingServiceConfig {
+
+    @Bean
+    PetServiceFactory petServiceFactory() {
+        return new PetServiceFactory();
+    }
+
+    @Bean
+    @Profile("cat")
+    PetService catPetService(PetServiceFactory petServiceFactory) {
+        return petServiceFactory.getPetService("cat");
+    }
+
+    @Bean
+    @Profile({"dog", "default"})
+    PetService dogPetService(PetServiceFactory petServiceFactory) {
+        return petServiceFactory.getPetService("dog");
+    }
 
     @Bean("i18nService")
     @Profile({"ES", "default"})
@@ -34,10 +52,10 @@ public class GreetingServiceConfig {
         return new PrimaryGreetingService();
     }
 
-    @Bean
-    ConstructorGreetingService constructorGreetingService() {
-        return new ConstructorGreetingService();
-    }
+//    @Bean
+//    ConstructorGreetingService constructorGreetingService() {
+//        return new ConstructorGreetingService();
+//    }
 
     @Bean
     PropertyInjectedGreetingService propertyInjectedGreetingService() {
