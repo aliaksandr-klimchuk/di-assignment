@@ -52,11 +52,6 @@ public class GreetingServiceConfig {
         return new PrimaryGreetingService();
     }
 
-//    @Bean
-//    ConstructorGreetingService constructorGreetingService() {
-//        return new ConstructorGreetingService();
-//    }
-
     @Bean
     PropertyInjectedGreetingService propertyInjectedGreetingService() {
         return new PropertyInjectedGreetingService();
