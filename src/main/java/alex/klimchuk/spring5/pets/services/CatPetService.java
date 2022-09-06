@@ -4,7 +4,7 @@ package alex.klimchuk.spring5.pets.services;
 //import org.springframework.stereotype.Service;
 
 /**
- * Copyright Alex Klimchuk (c) 2022.
+ * Copyright Alex Klimchuk (c) 15.01.2022.
  */
 //@Service
 //@Profile("cat")

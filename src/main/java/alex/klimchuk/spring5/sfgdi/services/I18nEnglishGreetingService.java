@@ -6,7 +6,7 @@ package alex.klimchuk.spring5.sfgdi.services;
 import alex.klimchuk.spring5.sfgdi.repositories.EnglishGreetingRepository;
 
 /**
- * Copyright Alex Klimchuk (c) 2022.
+ * Copyright Alex Klimchuk (c) 15.01.2022.
  */
 //@Profile("EN")
 //@Service("i18nService")

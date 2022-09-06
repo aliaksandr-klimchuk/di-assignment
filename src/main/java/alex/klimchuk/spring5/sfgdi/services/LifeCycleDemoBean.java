@@ -10,7 +10,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 /**
- * Copyright Alex Klimchuk (c) 2022.
+ * Copyright Alex Klimchuk (c) 15.01.2022.
  */
 @Component
 public class LifeCycleDemoBean implements InitializingBean, DisposableBean, BeanNameAware,

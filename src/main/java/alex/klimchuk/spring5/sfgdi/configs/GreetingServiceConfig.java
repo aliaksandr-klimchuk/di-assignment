@@ -1,4 +1,4 @@
-package alex.klimchuk.spring5.sfgdi.config;
+package alex.klimchuk.spring5.sfgdi.configs;
 
 import alex.klimchuk.spring5.pets.services.*;
 import alex.klimchuk.spring5.sfgdi.datasource.FakeDataSource;
@@ -9,7 +9,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.*;
 
 /**
- * Copyright Alex Klimchuk (c) 2022.
+ * Copyright Alex Klimchuk (c) 15.01.2022.
  */
 @Configuration
 @ImportResource("classpath:spring-config.xml")
@@ -20,11 +20,11 @@ public class GreetingServiceConfig {
 //    @Bean
 //    FakeDataSource fakeDataSource(@Value("${spring.data.username}") String username,
 //                                  @Value("${spring.data.password}") String password,
-//                                  @Value("${spring.data.jdbcurl}") String jdbcurl) {
+//                                  @Value("${spring.data.jdbcUrl}") String jdbcUrl) {
 //        FakeDataSource fakeDataSource = new FakeDataSource();
 //        fakeDataSource.setUsername(username);
 //        fakeDataSource.setPassword(password);
-//        fakeDataSource.setJdbcurl(jdbcurl);
+//        fakeDataSource.setJdbcUrl(jdbcUrl);
 //        return fakeDataSource;
 //    }
 
@@ -33,7 +33,7 @@ public class GreetingServiceConfig {
 //        FakeDataSource fakeDataSource = new FakeDataSource();
 //        fakeDataSource.setUsername(sfgdiConfiguration.getUsername());
 //        fakeDataSource.setPassword(sfgdiConfiguration.getPassword());
-//        fakeDataSource.setJdbcurl(sfgdiConfiguration.getJdbcurl());
+//        fakeDataSource.setJdbcUrl(sfgdiConfiguration.getJdbcUrl());
 //        return fakeDataSource;
 //    }
 
@@ -42,7 +42,7 @@ public class GreetingServiceConfig {
         FakeDataSource fakeDataSource = new FakeDataSource();
         fakeDataSource.setUsername(sfgdiConstructorConfig.getUsername());
         fakeDataSource.setPassword(sfgdiConstructorConfig.getPassword());
-        fakeDataSource.setJdbcurl(sfgdiConstructorConfig.getJdbcurl());
+        fakeDataSource.setJdbcUrl(sfgdiConstructorConfig.getJdbcUrl());
         return fakeDataSource;
     }
 

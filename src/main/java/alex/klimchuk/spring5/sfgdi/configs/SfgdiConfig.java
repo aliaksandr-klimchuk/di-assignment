@@ -1,18 +1,18 @@
-package alex.klimchuk.spring5.sfgdi.config;
+package alex.klimchuk.spring5.sfgdi.configs;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Copyright Alex Klimchuk (c) 2022.
+ * Copyright Alex Klimchuk (c) 15.01.2022.
  */
 @Configuration
 @ConfigurationProperties("spring.data")
-public class SfgdiConfiguration {
+public class SfgdiConfig {
 
     private String username;
     private String password;
-    private String jdbcurl;
+    private String jdbcUrl;
 
     public String getUsername() {
         return username;
@@ -30,12 +30,12 @@ public class SfgdiConfiguration {
         this.password = password;
     }
 
-    public String getJdbcurl() {
-        return jdbcurl;
+    public String getJdbcUrl() {
+        return jdbcUrl;
     }
 
-    public void setJdbcurl(String jdbcurl) {
-        this.jdbcurl = jdbcurl;
+    public void setJdbcUrl(String jdbcUrl) {
+        this.jdbcUrl = jdbcUrl;
     }
 
 }

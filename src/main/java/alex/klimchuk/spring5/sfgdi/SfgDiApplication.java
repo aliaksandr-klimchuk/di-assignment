@@ -1,7 +1,7 @@
 package alex.klimchuk.spring5.sfgdi;
 
-import alex.klimchuk.spring5.sfgdi.config.SfgdiConfiguration;
-import alex.klimchuk.spring5.sfgdi.config.SfgdiConstructorConfig;
+import alex.klimchuk.spring5.sfgdi.configs.SfgdiConfig;
+import alex.klimchuk.spring5.sfgdi.configs.SfgdiConstructorConfig;
 import alex.klimchuk.spring5.sfgdi.controllers.*;
 import alex.klimchuk.spring5.sfgdi.datasource.FakeDataSource;
 import alex.klimchuk.spring5.sfgdi.services.PrototypeBean;
@@ -12,7 +12,7 @@ import org.springframework.context.ApplicationContext;
 //import org.springframework.context.annotation.ComponentScan;
 
 /**
- * Copyright Alex Klimchuk (c) 2022.
+ * Copyright Alex Klimchuk (c) 15.01.2022.
  */
 @SpringBootApplication
 //@ComponentScan(basePackages = {"alex.klimchuk.spring5.sfgdi", "alex.klimchuk.spring5.pets"})
@@ -63,19 +63,19 @@ public class SfgDiApplication {
         FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
         System.out.println(fakeDataSource.getUsername());
         System.out.println(fakeDataSource.getPassword());
-        System.out.println(fakeDataSource.getJdbcurl());
+        System.out.println(fakeDataSource.getJdbcUrl());
 
         System.out.println("---------- Config Props Bean ----------");
-        SfgdiConfiguration sfgdiConfiguration = ctx.getBean(SfgdiConfiguration.class);
-        System.out.println(sfgdiConfiguration.getUsername());
-        System.out.println(sfgdiConfiguration.getPassword());
-        System.out.println(sfgdiConfiguration.getJdbcurl());
+        SfgdiConfig sfgdiConfig = ctx.getBean(SfgdiConfig.class);
+        System.out.println(sfgdiConfig.getUsername());
+        System.out.println(sfgdiConfig.getPassword());
+        System.out.println(sfgdiConfig.getJdbcUrl());
 
         System.out.println("---------- Constructor Binding ----------");
         SfgdiConstructorConfig sfgdiConstructorConfig = ctx.getBean(SfgdiConstructorConfig.class);
         System.out.println(sfgdiConstructorConfig.getUsername());
         System.out.println(sfgdiConstructorConfig.getPassword());
-        System.out.println(sfgdiConstructorConfig.getJdbcurl());
+        System.out.println(sfgdiConstructorConfig.getJdbcUrl());
     }
 
 }

@@ -5,20 +5,20 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 /**
- * Copyright Alex Klimchuk (c) 2022.
+ * Copyright Alex Klimchuk (c) 15.01.2022.
  */
-class PropertyInjectedControllerTest {
+public class PropertyInjectedControllerTest {
 
-    PropertyInjectedController controller;
+    private PropertyInjectedController controller;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         controller = new PropertyInjectedController();
         controller.greetingService = new ConstructorGreetingService();
     }
 
     @Test
-    void getGreeting() {
+    public void testGetGreeting() {
         System.out.println(controller.getGreeting());
     }
 

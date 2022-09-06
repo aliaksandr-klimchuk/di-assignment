@@ -4,7 +4,7 @@ import alex.klimchuk.spring5.pets.services.PetService;
 import org.springframework.stereotype.Controller;
 
 /**
- * Copyright Alex Klimchuk (c) 2022.
+ * Copyright Alex Klimchuk (c) 15.01.2022.
  */
 @Controller
 public class PetController {
