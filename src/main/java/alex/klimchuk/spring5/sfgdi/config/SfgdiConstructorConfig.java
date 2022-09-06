@@ -2,7 +2,6 @@ package alex.klimchuk.spring5.sfgdi.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.ConstructorBinding;
-import org.springframework.context.annotation.Configuration;
 
 /**
  * Copyright Alex Klimchuk (c) 2022.
