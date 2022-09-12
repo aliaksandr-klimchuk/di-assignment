@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>alex.klimchuk</groupId>
-    <artifactId>di-assigments</artifactId>
+    <artifactId>di-assigment</artifactId>
     <version>0.0.7-SNAPSHOT</version>
-    <name>di-assigments</name>
+    <name>di-assigment</name>
     <description>Dependency Injection examples</description>
 
     <properties>
