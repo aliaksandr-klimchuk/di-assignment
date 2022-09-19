@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.sql.SQLException;
 
 /**
- * Copyright Alex Klimchuk (c) 2022.
+ * Copyright Alex Klimchuk (c) 15.01.2022.
  */
 @Slf4j
 @ControllerAdvice

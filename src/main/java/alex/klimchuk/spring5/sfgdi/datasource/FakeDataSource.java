@@ -1,7 +1,7 @@
 package alex.klimchuk.spring5.sfgdi.datasource;
 
 /**
- * Copyright Alex Klimchuk (c) 2022.
+ * Copyright Alex Klimchuk (c) 15.01.2022.
  */
 public class FakeDataSource {
 

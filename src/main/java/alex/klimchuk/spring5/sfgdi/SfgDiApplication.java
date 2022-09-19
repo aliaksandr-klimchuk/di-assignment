@@ -12,7 +12,7 @@ import org.springframework.context.ApplicationContext;
 //import org.springframework.context.annotation.ComponentScan;
 
 /**
- * Copyright Alex Klimchuk (c) 2022.
+ * Copyright Alex Klimchuk (c) 15.01.2022.
  */
 @SpringBootApplication
 //@ComponentScan(basePackages = {"alex.klimchuk.spring5.sfgdi", "alex.klimchuk.spring5.pets"})

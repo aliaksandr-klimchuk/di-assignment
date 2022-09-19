@@ -3,7 +3,7 @@ package alex.klimchuk.spring5.sfgdi.repositories;
 //import org.springframework.stereotype.Repository;
 
 /**
- * Copyright Alex Klimchuk (c) 2022.
+ * Copyright Alex Klimchuk (c) 15.01.2022.
  */
 //@Repository
 public class EnglishGreetingRepositoryImpl implements EnglishGreetingRepository {
