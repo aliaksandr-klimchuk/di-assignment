@@ -1,4 +1,4 @@
-package alex.klimchuk.spring5.sfgdi.config;
+package alex.klimchuk.spring5.sfgdi.configs;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.ConstructorBinding;

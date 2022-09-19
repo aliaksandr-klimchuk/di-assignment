@@ -1,4 +1,4 @@
-package alex.klimchuk.spring5.sfgdi.config;
+package alex.klimchuk.spring5.sfgdi.configs;
 
 import alex.klimchuk.spring5.pets.services.*;
 import alex.klimchuk.spring5.sfgdi.datasource.FakeDataSource;
@@ -42,7 +42,7 @@ public class GreetingServiceConfig {
         FakeDataSource fakeDataSource = new FakeDataSource();
         fakeDataSource.setUsername(sfgdiConstructorConfig.getUsername());
         fakeDataSource.setPassword(sfgdiConstructorConfig.getPassword());
-        fakeDataSource.setJdbcurl(sfgdiConstructorConfig.getJdbcurl());
+        fakeDataSource.setJdbcUrl(sfgdiConstructorConfig.getJdbcurl());
         return fakeDataSource;
     }
 

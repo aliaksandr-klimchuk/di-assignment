@@ -1,7 +1,7 @@
 package alex.klimchuk.spring5.sfgdi;
 
-import alex.klimchuk.spring5.sfgdi.config.SfgdiConfiguration;
-import alex.klimchuk.spring5.sfgdi.config.SfgdiConstructorConfig;
+import alex.klimchuk.spring5.sfgdi.configs.SfgdiConfiguration;
+import alex.klimchuk.spring5.sfgdi.configs.SfgdiConstructorConfig;
 import alex.klimchuk.spring5.sfgdi.controllers.*;
 import alex.klimchuk.spring5.sfgdi.datasource.FakeDataSource;
 import alex.klimchuk.spring5.sfgdi.services.PrototypeBean;
@@ -63,7 +63,7 @@ public class SfgDiApplication {
         FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
         System.out.println(fakeDataSource.getUsername());
         System.out.println(fakeDataSource.getPassword());
-        System.out.println(fakeDataSource.getJdbcurl());
+        System.out.println(fakeDataSource.getJdbcUrl());
 
         System.out.println("---------- Config Props Bean ----------");
         SfgdiConfiguration sfgdiConfiguration = ctx.getBean(SfgdiConfiguration.class);

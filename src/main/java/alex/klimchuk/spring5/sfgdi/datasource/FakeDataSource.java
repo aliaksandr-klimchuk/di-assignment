@@ -7,7 +7,7 @@ public class FakeDataSource {
 
     private String username;
     private String password;
-    private String jdbcurl;
+    private String jdbcUrl;
 
     public String getUsername() {
         return username;
@@ -25,12 +25,12 @@ public class FakeDataSource {
         this.password = password;
     }
 
-    public String getJdbcurl() {
-        return jdbcurl;
+    public String getJdbcUrl() {
+        return jdbcUrl;
     }
 
-    public void setJdbcurl(String jdbcurl) {
-        this.jdbcurl = jdbcurl;
+    public void setJdbcUrl(String jdbcUrl) {
+        this.jdbcUrl = jdbcUrl;
     }
 
 }
