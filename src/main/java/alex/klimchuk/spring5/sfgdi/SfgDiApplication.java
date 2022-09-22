@@ -9,13 +9,13 @@ import alex.klimchuk.spring5.sfgdi.services.SingletonBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
+//import org.springframework.context.annotation.ComponentScan;
 
 /**
  * Copyright Alex Klimchuk (c) 15.01.2022.
  */
 @SpringBootApplication
-@ComponentScan(basePackages = {"alex.klimchuk.spring5.sfgdi", "alex.klimchuk.spring5.pets"})
+//@ComponentScan(basePackages = {"alex.klimchuk.spring5.sfgdi", "alex.klimchuk.spring5.pets"})
 public class SfgDiApplication {
 
     public static void main(String[] args) {
