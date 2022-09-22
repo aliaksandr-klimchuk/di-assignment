@@ -12,12 +12,12 @@ public class SfgdiConstructorConfig {
 
     private String username;
     private String password;
-    private String jdbcurl;
+    private String jdbcUrl;
 
-    public SfgdiConstructorConfig(String username, String password, String jdbcurl) {
+    public SfgdiConstructorConfig(String username, String password, String jdbcUrl) {
         this.username = username;
         this.password = password;
-        this.jdbcurl = jdbcurl;
+        this.jdbcUrl = jdbcUrl;
     }
 
     public String getUsername() {
@@ -36,12 +36,12 @@ public class SfgdiConstructorConfig {
         this.password = password;
     }
 
-    public String getJdbcurl() {
-        return jdbcurl;
+    public String getJdbcUrl() {
+        return jdbcUrl;
     }
 
-    public void setJdbcurl(String jdbcurl) {
-        this.jdbcurl = jdbcurl;
+    public void setJdbcUrl(String jdbcUrl) {
+        this.jdbcUrl = jdbcUrl;
     }
 
 }

@@ -18,7 +18,7 @@ public class PropertyInjectedControllerTest {
     }
 
     @Test
-    public void getGreeting() {
+    public void testGetGreeting() {
         System.out.println(controller.getGreeting());
     }
 

@@ -20,11 +20,11 @@ public class GreetingServiceConfig {
 //    @Bean
 //    FakeDataSource fakeDataSource(@Value("${spring.data.username}") String username,
 //                                  @Value("${spring.data.password}") String password,
-//                                  @Value("${spring.data.jdbcurl}") String jdbcurl) {
+//                                  @Value("${spring.data.jdbcUrl}") String jdbcUrl) {
 //        FakeDataSource fakeDataSource = new FakeDataSource();
 //        fakeDataSource.setUsername(username);
 //        fakeDataSource.setPassword(password);
-//        fakeDataSource.setJdbcurl(jdbcurl);
+//        fakeDataSource.setJdbcUrl(jdbcUrl);
 //        return fakeDataSource;
 //    }
 
@@ -33,7 +33,7 @@ public class GreetingServiceConfig {
 //        FakeDataSource fakeDataSource = new FakeDataSource();
 //        fakeDataSource.setUsername(sfgdiConfiguration.getUsername());
 //        fakeDataSource.setPassword(sfgdiConfiguration.getPassword());
-//        fakeDataSource.setJdbcurl(sfgdiConfiguration.getJdbcurl());
+//        fakeDataSource.setJdbcUrl(sfgdiConfiguration.getJdbcUrl());
 //        return fakeDataSource;
 //    }
 
@@ -42,7 +42,7 @@ public class GreetingServiceConfig {
         FakeDataSource fakeDataSource = new FakeDataSource();
         fakeDataSource.setUsername(sfgdiConstructorConfig.getUsername());
         fakeDataSource.setPassword(sfgdiConstructorConfig.getPassword());
-        fakeDataSource.setJdbcUrl(sfgdiConstructorConfig.getJdbcurl());
+        fakeDataSource.setJdbcUrl(sfgdiConstructorConfig.getJdbcUrl());
         return fakeDataSource;
     }
 

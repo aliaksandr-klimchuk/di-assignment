@@ -34,7 +34,7 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
         log.error("Handling not found exception!", exception.getMessage());
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("exception", exception);
-        modelAndView.setViewName("errorPage");
+        modelAndView.setViewName("/errorPage");
         return modelAndView;
     }
 
@@ -44,7 +44,7 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
         log.error("Handling number format exception!", exception.getMessage());
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("exception", exception);
-        modelAndView.setViewName("errorPage");
+        modelAndView.setViewName("/errorPage");
         return modelAndView;
     }
 

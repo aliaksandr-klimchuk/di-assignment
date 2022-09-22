@@ -5,11 +5,11 @@
     <groupId>alex.klimchuk</groupId>
     <artifactId>di-assigment</artifactId>
     <version>0.0.7-SNAPSHOT</version>
-    <name>di-assigment</name>
+    <name>di-assignment</name>
     <description>Dependency Injection examples</description>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>18</java.version>
     </properties>
 
     <parent>

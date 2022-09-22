@@ -1,13 +1,13 @@
 spring:
   profiles:
-      active:
-        - prod
-        - cat
-        - EN
+    active:
+      - prod
+      - cat
+      - EN
   data:
-     username: crazy_pro
-     password: DBPass
-     jdbcurl: anyUrlToDB
+    username: crazy_pro
+    password: DBPass
+    jdbcUrl: anyUrlToDB
 
 ---
 
@@ -16,4 +16,4 @@ spring:
   data:
     username: prod
     password: prodDBPass
-    jdbcurl: prodUrlToDB
+    jdbcUrl: prodUrlToDB

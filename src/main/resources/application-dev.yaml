@@ -2,4 +2,4 @@ spring:
   data:
     username: dev
     password: devDBPass
-    jdbcurl: devUrlToDB
+    jdbcUrl: devUrlToDB

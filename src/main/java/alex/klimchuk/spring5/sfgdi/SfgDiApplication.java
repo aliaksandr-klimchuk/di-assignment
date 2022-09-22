@@ -9,13 +9,13 @@ import alex.klimchuk.spring5.sfgdi.services.SingletonBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-//import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * Copyright Alex Klimchuk (c) 15.01.2022.
  */
 @SpringBootApplication
-//@ComponentScan(basePackages = {"alex.klimchuk.spring5.sfgdi", "alex.klimchuk.spring5.pets"})
+@ComponentScan(basePackages = {"alex.klimchuk.spring5.sfgdi", "alex.klimchuk.spring5.pets"})
 public class SfgDiApplication {
 
     public static void main(String[] args) {
@@ -69,13 +69,13 @@ public class SfgDiApplication {
         SfgdiConfiguration sfgdiConfiguration = ctx.getBean(SfgdiConfiguration.class);
         System.out.println(sfgdiConfiguration.getUsername());
         System.out.println(sfgdiConfiguration.getPassword());
-        System.out.println(sfgdiConfiguration.getJdbcurl());
+        System.out.println(sfgdiConfiguration.getJdbcUrl());
 
         System.out.println("---------- Constructor Binding ----------");
         SfgdiConstructorConfig sfgdiConstructorConfig = ctx.getBean(SfgdiConstructorConfig.class);
         System.out.println(sfgdiConstructorConfig.getUsername());
         System.out.println(sfgdiConstructorConfig.getPassword());
-        System.out.println(sfgdiConstructorConfig.getJdbcurl());
+        System.out.println(sfgdiConstructorConfig.getJdbcUrl());
     }
 
 }
