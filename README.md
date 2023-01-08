@@ -15,9 +15,12 @@ as well as almost all of its annotations and much more...
 ### Technologies:
 - Programming language: Java 13;
 - Frameworks:
-  - Spring (Boot, Core, Data, Web, Test);
+  - Spring (Boot, Core, Data, WebMVC, Test);
   - Hibernate.
 - Query language: SQL;
 - IDE: IntelliJ IDEA;
 - Tools: JUnit 5, Mockito, Lombok, Postman, Maven, Git, JDBC, JPA, HTTPs, XML, YAML, JSON;
-- Others: GitHub, HTML.
+- Others: GitHub, CircleCI, CodeCov, HTML.
+
+[![CircleCI](https://circleci.com/gh/Crazy-pro/di-assigment.svg?style=svg)](https://app.circleci.com/gh/Crazy-pro/di-assigment)
+[![CodeCov](https://codecov.io/gh/Crazy-pro/di-assigment/branch/master/graph/badge.svg)](https://codecov.io/gh/Crazy-pro/di-assigment)
