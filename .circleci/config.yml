@@ -6,7 +6,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/openjdk:13.0
+      - image: cimg/openjdk:18.0.2
     steps:
       - checkout
       - run:
@@ -15,7 +15,8 @@ jobs:
       - run:
           name: Run tests and collect coverage
           command: mvn -B test
-      - codecov/upload
+      - codecov/upload:
+          file: './codecov.yml'
 
 workflow:
   version: 2.1

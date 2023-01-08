@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ConfigurationProperties("spring.data")
-public class SfgdiConfiguration {
+public class SfgdiConfig {
 
     private String username;
     private String password;

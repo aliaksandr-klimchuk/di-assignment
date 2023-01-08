@@ -1,6 +1,6 @@
 package alex.klimchuk.spring5.sfgdi;
 
-import alex.klimchuk.spring5.sfgdi.configs.SfgdiConfiguration;
+import alex.klimchuk.spring5.sfgdi.configs.SfgdiConfig;
 import alex.klimchuk.spring5.sfgdi.configs.SfgdiConstructorConfig;
 import alex.klimchuk.spring5.sfgdi.controllers.*;
 import alex.klimchuk.spring5.sfgdi.datasource.FakeDataSource;
@@ -66,10 +66,10 @@ public class SfgDiApplication {
         System.out.println(fakeDataSource.getJdbcUrl());
 
         System.out.println("---------- Config Props Bean ----------");
-        SfgdiConfiguration sfgdiConfiguration = ctx.getBean(SfgdiConfiguration.class);
-        System.out.println(sfgdiConfiguration.getUsername());
-        System.out.println(sfgdiConfiguration.getPassword());
-        System.out.println(sfgdiConfiguration.getJdbcUrl());
+        SfgdiConfig sfgdiConfig = ctx.getBean(SfgdiConfig.class);
+        System.out.println(sfgdiConfig.getUsername());
+        System.out.println(sfgdiConfig.getPassword());
+        System.out.println(sfgdiConfig.getJdbcUrl());
 
         System.out.println("---------- Constructor Binding ----------");
         SfgdiConstructorConfig sfgdiConstructorConfig = ctx.getBean(SfgdiConstructorConfig.class);
