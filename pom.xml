@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>alex.klimchuk</groupId>
     <artifactId>di-assignment</artifactId>
-    <version>0.0.9-SNAPSHOT</version>
+    <version>0.0.7-SNAPSHOT</version>
     <name>di-assignment</name>
     <description>Dependency Injection examples</description>
 
