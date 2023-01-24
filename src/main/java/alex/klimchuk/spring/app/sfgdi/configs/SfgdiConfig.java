@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
  * Copyright Alex Klimchuk (c) 15.01.2022.
  */
 @Configuration
-@ConfigurationProperties("spring.app.data")
+@ConfigurationProperties("spring.data")
 public class SfgdiConfig {
 
     private String username;
