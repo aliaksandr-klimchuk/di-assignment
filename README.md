@@ -5,7 +5,7 @@ as well as almost all of its annotations and much more...
 
 
 
-### How to start:
+### How to start: 
 1. Install and run any IDE for working with Java.
 2. Run the application and check end-points work using Postman and link below:
    - http://localhost:8080/
