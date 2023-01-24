@@ -7,7 +7,7 @@ import org.springframework.boot.context.properties.ConstructorBinding;
  * Copyright Alex Klimchuk (c) 15.01.2022.
  */
 @ConstructorBinding
-@ConfigurationProperties("spring.data")
+@ConfigurationProperties("spring.app.data")
 public class SfgdiConstructorConfig {
 
     private String username;

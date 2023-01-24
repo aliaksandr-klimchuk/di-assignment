@@ -1,14 +1,9 @@
 package alex.klimchuk.spring.app.sfgdi.configs;
 
-import alex.klimchuk.spring.app.pets.services.PetService;
-import alex.klimchuk.spring.app.pets.services.PetServiceFactory;
 import alex.klimchuk.spring.app.sfgdi.datasource.FakeDataSource;
-import alex.klimchuk.spring.app.sfgdi.repositories.EnglishGreetingRepository;
-import alex.klimchuk.spring.app.sfgdi.repositories.EnglishGreetingRepositoryImpl;
+import alex.klimchuk.spring.app.pets.services.*;
+import alex.klimchuk.spring.app.sfgdi.repositories.*;
 import alex.klimchuk.spring.app.sfgdi.services.*;
-import alex.klimchuk.spring.pets.services.*;
-import alex.klimchuk.spring.sfgdi.repositories.*;
-import alex.klimchuk.spring.sfgdi.services.*;
 //import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.*;
