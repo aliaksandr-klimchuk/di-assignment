@@ -12,7 +12,6 @@ as well as almost all of its annotations and much more...
 
 
 
-
 ### Technologies:
 - Programming language: Java 13;
 - Frameworks:
