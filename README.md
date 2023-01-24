@@ -20,7 +20,7 @@ as well as almost all of its annotations and much more...
 - Query language: SQL;
 - IDE: IntelliJ IDEA;
 - Tools: JUnit 5, Mockito, Lombok, Postman, Maven, Git, JDBC, JPA, HTTPs, XML, YAML, JSON;
-- Others: GitHub, CircleCI, CodeCov, SonarCloud, HTML.
+- Others: GitHub, CircleCI, CodeCov, SonarLint, SonarCloud, HTML.
 
 [![CircleCI](https://circleci.com/gh/Crazy-pro/di-assignment.svg?style=svg)](https://app.circleci.com/gh/Crazy-pro/di-assignment)
 [![CodeCov](https://codecov.io/gh/Crazy-pro/di-assignment/branch/master/graph/badge.svg)](https://codecov.io/gh/Crazy-pro/di-assignment)
