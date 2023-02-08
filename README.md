@@ -1,7 +1,7 @@
 ### Dependency Injection Assignment
 This project is the result of completing various tasks on all the features of the Spring Framework 5,
 primarily such as dependency injection, the life cycle of Spring Beans, dependency inversion, IoC,
-as well as almost all of its annotations and much more...
+as well as almost all of its annotations and much more... 
 
 
 
