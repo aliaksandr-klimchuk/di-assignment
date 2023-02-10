@@ -3,7 +3,7 @@ This project is the result of completing various tasks on all the features of th
 primarily such as dependency injection, the life cycle of Spring Beans, dependency inversion, IoC,
 as well as almost all of its annotations and much more... 
 
-
+ 
  
 ### How to start: 
 1. Install and run any IDE for working with Java.
